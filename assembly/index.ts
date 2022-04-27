@@ -1,6 +1,6 @@
 // The entry file of your WebAssembly module.
 
-export function asExample(): i64 {
+function asExampleOne(): i64 {
 	const iterations: i32 = 2_000_000_000
 	let returnValue: i32 = 0
 
@@ -14,3 +14,5 @@ export function asExample(): i64 {
 
 	return returnValue
 }
+
+export { asExampleOne }
